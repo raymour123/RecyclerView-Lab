@@ -5,49 +5,47 @@ package example.com.recyclerviewlab;
  */
 public class CustomObject2 {
 
-    String mTitle2;
-    String mDescription2;
-    String mColor2;
-    boolean mCheckBox1;
+    private String Title2;
+    private String Description2;
+    private String Color2;
+    private boolean CheckBox1;
 
-    public CustomObject2() {
+    public CustomObject2(String myTitle2, String myDescription2, String myColor2, boolean myCheckBox) {
 
-        mTitle2 = "Title2";
-        mDescription2 = "Description2";
-        mColor2 = "Green";
-        mCheckBox1 = false;
+        Title2 = myTitle2;
+        Description2 = myDescription2;
+        Color2 = myColor2;
+        CheckBox1 = myCheckBox;
     }
 
-
-    public String getmTitle2() {
-        return mTitle2;
+    public String getTitle2() {
+        return Title2;
     }
 
-    public String getGetmDescription2() {
-        return mDescription2;
+    public String getDescription2() {
+        return Description2;
     }
 
-    public String getmColor2() {
-        return mColor2;
+    public String getColor2() {
+        return Color2;
     }
 
-    public boolean ismCheckBox1() {
-        return mCheckBox1;
+    public boolean isCheckBox1() {
+        return CheckBox1;
+    }
+    public void setTitle2(String title2) {
+        Title2 = title2;
     }
 
-    public void setmTitle2(String mTitle2) {
-        this.mTitle2 = mTitle2;
+    public void setDescription2(String description2) {
+        Description2 = description2;
     }
 
-    public void setGetmDescription2(String getmDescription2) {
-        this.mDescription2 = getmDescription2;
+    public void setColor2(String color2) {
+        Color2 = color2;
     }
 
-    public void setmColor2(String mColor2) {
-        this.mColor2 = mColor2;
-    }
-
-    public void setmCheckBox1(boolean mCheckBox1) {
-        this.mCheckBox1 = mCheckBox1;
+    public void setCheckBox1(boolean checkBox1) {
+        CheckBox1 = checkBox1;
     }
 }
